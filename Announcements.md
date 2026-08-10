@@ -23,8 +23,9 @@ This week, we are will discuss about world wide web (www), internet & website.
 
 | Assignment / Project | Due Date | Description | Link |
 | :------------------- | :------- | :---------- | :--- |
+|Week 1 Assignment | Tuesday 08/11/26|Submit your files via Google Form link provided.| [Lesson 1](Week1/WK1-Lesson1/Exercise.md) [Lesson 2](Week1/WK1-Lesson2/Exercise.md)
 
-> 💡 **Submission Tip:** Remember to commit your changes to your own fork/branch or submit your zipped code folder as instructed in class!
+> 💡 **Submission Tip:** A google form link has been shared through text. Please use your link to upload your submission. Please use only the assigned link. DO NOT use your friend's google form link.
 
 ---
 
