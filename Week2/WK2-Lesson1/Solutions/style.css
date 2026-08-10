@@ -1,0 +1,39 @@
+/* Basic Global Resets */
+body {
+    background-color: #1a1a24; /* Sleek, dark midnight background */
+    color: #e0e0e8; /* Soft light text for dark mode comfort */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* General style applied to all team cards */
+.team-card {
+    background-color: #2a2a36; /* Dark slate card fill */
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+    border-left: 4px solid #3498db; /* Default blue accent bar */
+}
+
+.team-card h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+/* Specific custom ID overwriting values on the Champion Card */
+#champion {
+    border-left: 4px solid #f1c40f; /* Overwrite with Gold accent bar */
+    background-color: #2f2e30; /* Dark premium highlight shade */
+}
+
+#champion h2 {
+    color: #f1c40f; /* Champion title turns bright Gold! */
+}

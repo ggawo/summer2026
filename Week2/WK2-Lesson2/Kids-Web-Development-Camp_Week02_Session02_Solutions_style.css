@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #11141a;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 40px 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+/* Master Card Box Setup */
+.score-card {
+    background-color: #1a1f29;
+    width: 100%;
+    max-width: 480px;
+    
+    /* Box Model Tuning */
+    padding: 25px;
+    margin: 20px auto; /* 20px vertical gap, auto horizontal centering */
+    
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+    /* Smooth transition animation for the Level 3 hover task */
+    transition: all 0.2s ease-in-out;
+}
+
+.score-card h2 {
+    margin: 0 0 10px 0; /* Zero top/sides, 10px spacing below title */
+    color: #ecf0f1;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.status-badge.eliminated {
+    background-color: #c0392b;
+}
+
+/* Level 3 Extreme Challenge Hover Animations */
+.score-card:hover {
+    transform: translateY(-4px); /* Moves the card up slightly */
+    box-shadow: 0 8px 15px rgba(243, 156, 18, 0.2); /* Adds a colored glow shadow */
+    border-color: #f39c12;
+}

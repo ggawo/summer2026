@@ -1,0 +1,50 @@
+/* Apply the border-box fix globally to everything */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f3f5;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.helper-text {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* Base style for both cards */
+.match-box {
+    width: 450px;
+    margin: 0 auto; /* Centers the boxes horizontally on screen */
+    background-color: #ffffff;
+    border: 2px solid #333333;
+}
+
+/* THE BAD EXAMPLE: Uncomfortable layout */
+.bad-box {
+    padding: 0px;
+    margin-bottom: 0px; /* Smashes straight into the next box */
+    background-color: #fceae9;
+    border-color: #c0392b;
+}
+
+/* THE GOOD EXAMPLE: Clean, modern card architecture */
+.good-box {
+    /* Clockwise shorthand: 20px Top/Bottom, 30px Right/Left */
+    padding: 20px 30px; 
+    
+    /* Push the top box away */
+    margin-top: 25px; 
+    
+    background-color: #e8f8f5;
+    border: 3px solid #1abc9c; /* Clean teal border frame */
+    border-radius: 6px;
+}
