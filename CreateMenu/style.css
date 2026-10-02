@@ -5,9 +5,8 @@ header, main, footer { padding: 1rem; max-width: 900px; margin: 0 auto; }
 header { text-align: center; }
 
 /* Navigation menu styles */
-.main-nav { background: #1f6feb; }
+.main-nav { background: #152132; }
 .main-nav ul { list-style: none; margin: 0; padding: 0.25rem 1rem; display: flex; gap: 0.5rem; justify-content: center; }
-.main-nav li { }
 .main-nav a {
   display: inline-block;
   padding: 0.5rem 0.9rem;

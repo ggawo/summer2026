@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+<nav class="main-nav" aria-label="Main">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#players">Players</a></li>
+    <li><a href="#women">Women</a></li>
+    <li><a href="#tables">Tables</a></li>
+  </ul>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section of the demo page. This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.This is the home section of the demo page.</p>
+    </section>
+
+    <section
+    id="about">
+            <h2>About</h2>
+            <p>Information about the site or the class goes here. Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.Information about the site or the class goes here.</p>
+    </section>
+
+    <section id="players">
+        <h2>Players</h2>
+        <p>Information about players goes here. Information about players goes here.Information about players goes here.Information about players goes here.Information about players goes here.Information
+    </section>
+
+    <section id="women">
+        <h2>Women</h2>
+        <p>Information about women goes here. Information about women goes here.Information about women goes here.Information about women goes here.Information about women goes here.Information
+    </section>
+
+    <section id="tables">
+        <h2>Tables</h2>
+        <p>Information about tables goes here. Information about tables goes here.Information about tables goes here.</p>
+        <button id="showTable">Show Table</button>
+        <div id="table">
+            
+        </div>
+    </section>
+
+</main>
+
+        <h2>Contact</h2>
+        <p>Provide contact information and a form for users to get in touch.</p>
+    </section>
+
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <p>Describe the main attractions or points of interest here.</p>
+    </section>
+</main>
+
+<script>
+    const showTableButton = document.getElementById('showTable');
+    showTableButton.addEventListener('click', () => {
+        const tableDiv = document.getElementById('table');
+        const tableHTML = `
+            <table border="1" style="border-collapse: collapse; width: 50%; text-align: center; margin-left: auto; margin-right: auto;">
+                <tr style="background-color: rgb(37, 9, 177); color: white;">
+                    <th>Name</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Amron</td>
+                    <td>Team A</td>
+                </tr>
+                <tr>
+                    <td>Liah</td>
+                    <td>Team A</td>
+                </tr>
+            </table>
+        `;
+        tableDiv.innerHTML = tableHTML;
+    });
+</script>
+
+
+</body>
+
+</html>
