@@ -4,56 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo: Addition & Multiplication App</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 16px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-        }
-        .btn-group {
-            margin: 15px 0;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 5px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            transition: 0.2s;
-        }
-        .add-btn { background-color: #28a745; }
-        .multiply-btn { background-color: #007bff; }
-        button:hover { opacity: 0.9; transform: scale(1.02); }
-        .result-card {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            border: 2px dashed #007bff;
-        }
-        #result-text {
-            color: #333;
-            font-size: 24px;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Enter your age">
+    <button id="greet-btn" style="background-color: #17a2b8;">👋 Greet Me!</button>
+    <button id="clear-btn" style="background-color: #dc3545;">🧹 Clear</button>
+
+    <div id="show-greet"></div>
+
+
+
+
 
     <h2>🔢 Interactive Number Cruncher</h2>
     <p>Enter two numbers below and pick an operation:</p>
@@ -71,6 +36,21 @@
     </div>
 
     <script>
+        const greetBtn = document.getElementById('greet-btn');
+        const showGreet = document.getElementById('show-greet');
+        const clearBtn = document.getElementById('clear-btn');
+        greetBtn.addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            showGreet.textContent = `Hello ${name}! You are ${age} years old.`;
+        });
+        clearBtn.addEventListener('click', function() {
+            document.getElementById('name').value = '';
+            document.getElementById('age').value = '';
+            showGreet.textContent = '';
+        });
+
+
         // Select elements
         const num1Input = document.getElementById('num1');
         const num2Input = document.getElementById('num2');
