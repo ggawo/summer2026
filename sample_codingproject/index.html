@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project- Ethiopia</title>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="main-nav" aria-label="Main">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#geography">Geography</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#sport">Sports</a></li>
+    </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Ethiopia</h1>
+            <h3>Discover the rich history, culture, and landscapes of Ethiopia.</h3>
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Ethiopia</h1>
+            <p>Ethiopia is a country located in the Horn of Africa. It is known for its rich history, diverse culture, and stunning landscapes. From the ancient rock-hewn churches of Lalibela to the Simien Mountains National Park, Ethiopia offers a unique experience for travelers and history enthusiasts alike.</p>
+        </section>  
+
+        <section id="about">
+            <h2>About Ethiopia</h2>
+            <p>Ethiopia is a landlocked country in East Africa, bordered by Eritrea, Djibouti, Somalia, Kenya, South Sudan, and Sudan. It has a population of over 110 million people and is known for its diverse ethnic groups and languages. The country has a rich cultural heritage, with ancient traditions and customs that have been preserved for centuries.</p>
+        </section>
+        <section id="geography">
+            <h2>Geography</h2>
+            <p>Ethiopia is characterized by its diverse topography, which includes the Ethiopian Highlands, the Great Rift Valley, and the Danakil Depression. The country is home to several major rivers, including the Blue Nile and the Tekezé River.</p>
+            
+            <img src="africa.png" alt="Map of Africa highlighting Ethiopia" class="map-image", style="width: 200px; height: auto;">
+            
+            <button id="show-ethio-map-btn">Show Ethiopia Map</button>
+            
+            <div id="ethio-map" hidden>
+                <img src="ethio.png" alt="Map of Ethiopia" class="map-image" style="width: 200px; height: auto;">
+            </div>
+
+            
+
+        </section>
+        <section id="culture">
+            <h2>Culture</h2>
+            <p>Ethiopia has a rich cultural heritage, with over 80 ethnic groups and more than 60 languages spoken throughout the country. The culture is deeply rooted in tradition and includes unique customs, music, dance, and art forms.</p>
+        </section>
+        <section id="sport">
+            <h2>Sports</h2>
+            <p>Ethiopia is known for its prowess in long-distance running, with athletes consistently performing at the highest levels in international competitions. The country also has a strong tradition in other sports such as football and basketball.</p>
+        </section>
+    </main>
+
+    <script>
+        const showEthioMapBtn = document.getElementById('show-ethio-map-btn');
+        const ethioMapDiv = document.getElementById('ethio-map');
+
+        showEthioMapBtn.addEventListener('click', function() {
+            const isHidden = ethioMapDiv.hidden;
+            ethioMapDiv.hidden = !isHidden;
+            showEthioMapBtn.textContent = isHidden ? 'Hide Ethiopia Map' : 'Show Ethiopia Map';
+            showEthioMapBtn.setAttribute('aria-expanded', String(isHidden));
+        });
+
+
+
+    
+
+    </script>
+    
+</body>
+</html>
